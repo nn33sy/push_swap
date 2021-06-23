@@ -16,5 +16,6 @@ void	ft_print_stack(t_list **stack)
 		printf("%d", tmp->content);
 		tmp = tmp->next;
 	}
+    
 }
 

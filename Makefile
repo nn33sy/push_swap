@@ -4,7 +4,8 @@ CFLAGS=  -Wall -Wextra -Werror
 OBJ = ${SRCS:.c=.o}
 
 SRCS =		ft_parsing.c\
-			ft_utils.c
+			ft_utils.c\
+			ft_sort_int_tab.c
 		
 OBJS	=	$(SRCS:.c=.o)
 # COLORS

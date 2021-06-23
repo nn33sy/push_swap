@@ -47,7 +47,8 @@ int	ft_create_stack_a(int len, char **arg)
 		ft_lstadd_back(data.stack_a, tmp);
 		i++;
 	}
-	ft_print_stack(data.stack_a);
+	data.len_a = len - 1;
+	//ft_print_stack(data.stack_a);
 	return (1);
 }
 
