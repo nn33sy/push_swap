@@ -22,4 +22,16 @@ int	ft_parsing(int len, char **arg);
 void	ft_print_stack(t_list **stack);
 void	ft_error(void);
 void	ft_sort_int_tab(int *tab, int size);
+int ft_sa(void);
+int ft_sb(void);
+int ft_pa(void);
+int ft_pb(void);
+int ft_ra(void);
+int ft_rb(void);
+int ft_rr(void);
+t_list *ft_last(t_list **stack);
+t_list *ft_last_before(t_list **stack);
+int ft_rra(void);
+int ft_rrb(void);
+int ft_rrr(void);
 #endif

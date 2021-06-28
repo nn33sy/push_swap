@@ -5,7 +5,11 @@ OBJ = ${SRCS:.c=.o}
 
 SRCS =		ft_parsing.c\
 			ft_utils.c\
-			ft_sort_int_tab.c
+			ft_sort_int_tab.c\
+			ft_swap.c\
+			ft_push.c\
+			ft_rotate.c\
+			ft_rrotate.c
 		
 OBJS	=	$(SRCS:.c=.o)
 # COLORS

@@ -13,7 +13,7 @@ void	ft_print_stack(t_list **stack)
 	tmp = *stack;
 	while (tmp != NULL)
 	{
-		printf("%d", tmp->content);
+		printf("%d ", tmp->content);
 		tmp = tmp->next;
 	}
     

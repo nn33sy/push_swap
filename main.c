@@ -40,9 +40,9 @@ void ft_find_mediane(t_list **stack, int len)
 
 	tab = ft_create_tab(stack, len);
 	ft_print_tab(tab);
-	ft_sort_int_tab(tab, len);
+	//ft_sort_int_tab(tab, len);
 	printf("\n");
-	ft_print_tab(tab);
+	//ft_print_tab(tab);
 	i_med = len / 2;
 	med = tab[i_med];
 }
@@ -51,5 +51,6 @@ int	main(int argc, char **argv)
 {
 	if (ft_parsing(argc, argv) == -1)
 		ft_error();
-	ft_find_mediane(data.stack_a, data.len_a);
+	
+	//ft_find_mediane(data.stack_a, data.len_a);
 }
