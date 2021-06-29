@@ -20,6 +20,7 @@ typedef	struct	s_list
 {
 	int content;
 	struct s_list	*next;
+	struct s_list	*before;
 }				t_list;
 
 void			*ft_memset(void *b, int c, size_t len);

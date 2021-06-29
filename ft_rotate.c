@@ -16,15 +16,24 @@ int ft_ra(void)
 {
         t_list *tmp;
 
-        if (data.stack_a != NULL && *(data.stack_a) != NULL
-        && (*data.stack_a)->next != NULL)
+        if (*(data.stack_a) != NULL)
         {
+            if ((*data.stack_a)->next != NULL)
+            {
             tmp = *(data.stack_a);
             *(data.stack_a) = tmp->next;
+            tmp->next->before = NULL;
             tmp->next = NULL;
-            ft_last(data.stack_a)->next = tmp;
+            data.last_stacka->next = tmp;
+            data.last_stacka = tmp;
             return (1);
+            }
+            else 
+                data.last_stacka = (*data.stack_a);
+
         }
+        else
+            data.last_stacka = NULL;
         return (-1);
 }
 
@@ -32,15 +41,25 @@ int ft_rb(void)
 {
         t_list *tmp;
 
-        if (data.stack_b != NULL && *(data.stack_b) != NULL
-        && (*data.stack_b)->next != NULL)
+        if (*(data.stack_b) != NULL)
         {
+            if ((*data.stack_b)->next != NULL)
+            {
             tmp = *(data.stack_b);
             *(data.stack_b) = tmp->next;
+            tmp->next->before = NULL;
             tmp->next = NULL;
-            ft_last(data.stack_b)->next = tmp;
+            data.last_stackb->next = tmp;
+            data.last_stackb = tmp;
             return (1);
+            }
+            else 
+                data.last_stackb = (*data.stack_b);
+
         }
+        else 
+            data.last_stackb = NULL;
+
         return (-1);
 }
 

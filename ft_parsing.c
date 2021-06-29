@@ -7,6 +7,7 @@ int	ft_initiate_data(void)
 		return (-1);
 	*data.stack_a = NULL;
 	data.stack_b = (t_list **)malloc(sizeof(t_list *));
+	data.len_b = 0;
 	if (data.stack_b == NULL)
 		return (-1);
 	*data.stack_b = NULL;
@@ -45,10 +46,11 @@ int	ft_create_stack_a(int len, char **arg)
 		if (tmp == NULL)
 			ft_error();
 		ft_lstadd_back(data.stack_a, tmp);
+		if (i == len - 1)
+			data.last_stacka = tmp;
 		i++;
 	}
 	data.len_a = len - 1;
-	ft_print_stack(data.stack_a);
 	return (1);
 }
 
@@ -57,5 +59,8 @@ int	ft_parsing(int len, char **arg)
 	if (ft_initiate_data() == -1)
 		ft_error();
 	ft_create_stack_a(len, arg);
+	data.last_stackb = NULL;
+
+
 	return (1);
 }

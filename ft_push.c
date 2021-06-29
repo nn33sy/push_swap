@@ -12,7 +12,11 @@ int ft_pa()
         else 
             *(data.stack_b) = NULL;
         tmp->next = *(data.stack_a);
+        if (data.last_stacka == NULL)
+            data.last_stacka = tmp;
         *(data.stack_a) = tmp;
+        data.len_b--;
+        data.len_a++;
         return (1);
     }
     return (-1);
@@ -31,7 +35,11 @@ int ft_pb()
         else 
             *(data.stack_a) = NULL;
         tmp->next = *(data.stack_b);
+        if (data.last_stackb == NULL)
+            data.last_stackb = tmp;
         *(data.stack_b) = tmp;
+        data.len_b++;
+        data.len_a--;
         return (1);
     }
     return (-1);
