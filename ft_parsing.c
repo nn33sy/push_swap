@@ -60,7 +60,5 @@ int	ft_parsing(int len, char **arg)
 		ft_error();
 	ft_create_stack_a(len, arg);
 	data.last_stackb = NULL;
-
-
 	return (1);
 }

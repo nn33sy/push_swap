@@ -31,10 +31,14 @@ int ft_pb()
     {
         tmp = *(data.stack_a);
         if (tmp->next != NULL)
+        {
             *(data.stack_a) = tmp->next;
+            tmp->next->before = NULL;
+        }
         else 
             *(data.stack_a) = NULL;
         tmp->next = *(data.stack_b);
+        tmp->before = NULL;
         if (data.last_stackb == NULL)
             data.last_stackb = tmp;
         *(data.stack_b) = tmp;

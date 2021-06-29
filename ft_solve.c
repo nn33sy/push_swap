@@ -21,9 +21,30 @@ int ft_end_stacka()
     {
         data.nb_push++;
         ft_rra();
+        if (data.len_a <= 6)
+            return (1);
         ft_pb();
+      //  ft_print_stack(data.stack_a);
         if (data.last_stacka != NULL)
             ft_end_stacka();
+    }
+    return (1);
+}
+
+int ft_mid_stack_a()
+{
+     if (data.nb_push >= data.i_med)
+        return (1);
+    if ((*data.stack_a)->content >= data.med)
+    {
+        ft_ra();
+        ft_mid_stack_a();
+    }
+    if ((*data.stack_a)->content < data.med)
+    {
+        data.nb_push ++;
+        ft_pb();
+        ft_mid_stack_a();
     }
     return (1);
 }
@@ -35,14 +56,21 @@ int ft_solve_one(void)
     {
         data.nb_push = 0;
         ft_find_mediane(data.stack_a, data.len_a);
-        printf("MED = %d\n", data.med);
        ft_debut_stacka(*(data.stack_a));
-       ft_end_stacka();
-       if (data.nb_push <)
-       ft_print_stack(data.stack_a);
-       printf("\n");
-       ft_print_stack(data.stack_b);
 
+       ft_end_stacka();
+        if (data.len_a <= 6)
+            return(1);
+       ft_mid_stack_a();
+       printf("\n \n");
+       
+       ft_solve_one();
+
+    }
+    if (data.len_a == 2)
+    {
+        if ((*data.stack_a)->content > (*data.stack_a)->next->content)
+            ft_sa();
     }
     
 return (1);

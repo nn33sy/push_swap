@@ -20,7 +20,7 @@ int ft_rra(void)
 
     if (data.stack_a != NULL && *(data.stack_a) != NULL
     && (*data.stack_a)->next != NULL)
-    {
+    {      
     if ((*data.stack_a)->next->next == NULL)
         {
             ft_sa();
@@ -28,7 +28,10 @@ int ft_rra(void)
         }
         tmp = data.last_stacka;
         data.last_stacka = data.last_stacka->before;
-        tmp->before->next = NULL;
+            if (data.len_a <= 6)
+            return (1);
+        data.last_stacka->next = NULL;
+              
         tmp->next = *(data.stack_a);
         *(data.stack_a) = tmp;
         return (1);

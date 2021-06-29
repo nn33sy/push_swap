@@ -38,8 +38,7 @@ void ft_find_mediane(t_list **stack, int len)
 
 	tab = ft_create_tab(stack, len);
 	ft_sort_int_tab(tab, len);
-	printf("\n");
-	//ft_print_tab(tab);
+
 	data.i_med = len / 2;
 	data.med = tab[data.i_med];
 }
