@@ -48,9 +48,10 @@ int ft_rb(void)
             {
             tmp = *(data.stack_b);
             *(data.stack_b) = tmp->next;
-            tmp->next->before = NULL;
-            tmp->next = NULL;
+            (*data.stack_b)->before = NULL;
             data.last_stackb->next = tmp;
+            tmp->before = data.last_stackb;
+            tmp->next = NULL;
             data.last_stackb = tmp;
             return (1);
             }
@@ -58,11 +59,11 @@ int ft_rb(void)
                 data.last_stackb = (*data.stack_b);
 
         }
-        else 
+        else
             data.last_stackb = NULL;
-
         return (-1);
 }
+
 
 int ft_rr(void)
 {

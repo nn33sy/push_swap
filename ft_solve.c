@@ -56,12 +56,12 @@ int ft_solve_one(void)
     {
         data.nb_push = 0;
         ft_find_mediane(data.stack_a, data.len_a);
+        printf("MED = %d i_MED = %d",data.med, data.i_med);
        ft_debut_stacka(*(data.stack_a));
-
        ft_end_stacka();
-        if (data.len_a <= 6)
-            return(1);
        ft_mid_stack_a();
+       ft_print_stack(data.stack_a);
+       ft_print_stack(data.stack_b);
        printf("\n \n");
        
        ft_solve_one();

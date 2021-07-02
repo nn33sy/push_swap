@@ -28,17 +28,15 @@ int ft_rra(void)
         }
         tmp = data.last_stacka;
         data.last_stacka = data.last_stacka->before;
-            if (data.len_a <= 6)
-            return (1);
         data.last_stacka->next = NULL;
-              
         tmp->next = *(data.stack_a);
+        tmp->before = NULL;
+        (*data.stack_a)->before = tmp;
         *(data.stack_a) = tmp;
         return (1);
     }
     return (-1);
 }
-
 
 int ft_rrb(void)
 {
@@ -46,7 +44,7 @@ int ft_rrb(void)
 
     if (data.stack_b != NULL && *(data.stack_b) != NULL
     && (*data.stack_b)->next != NULL)
-    {
+    {      
     if ((*data.stack_b)->next->next == NULL)
         {
             ft_sb();
@@ -54,13 +52,17 @@ int ft_rrb(void)
         }
         tmp = data.last_stackb;
         data.last_stackb = data.last_stackb->before;
-        tmp->before->next = NULL;
+        data.last_stackb->next = NULL;
         tmp->next = *(data.stack_b);
+        tmp->before = NULL;
+        (*data.stack_b)->before = tmp;
         *(data.stack_b) = tmp;
         return (1);
     }
     return (-1);
 }
+
+
 
 int ft_rrr(void)
 {
