@@ -8,9 +8,9 @@ int	main(int argc, char **argv)
 ft_print_stack(data.stack_a);
         ft_print_reverse(data.last_stacka);
 		printf("\n");
-	ft_ra();
-//ft_print_stack(data.stack_a);
-       // ft_print_reverse(data.last_stacka);
+	ft_rra();
+	ft_print_stack(data.stack_a);
+     ft_print_reverse(data.last_stacka);
 	//ft_solve_one();
 	//ft_find_mediane(data.stack_a, data.len_a);
 }

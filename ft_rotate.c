@@ -23,9 +23,9 @@ int ft_ra(void)
             tmp = *(data.stack_a);
             *(data.stack_a) = tmp->next;
             (*data.stack_a)->before = NULL;
-            tmp->next = data.last_stacka;
-            tmp->before = NULL;
             data.last_stacka->next = tmp;
+            tmp->before = data.last_stacka;
+            tmp->next = NULL;
             data.last_stacka = tmp;
             return (1);
             }
