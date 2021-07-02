@@ -8,15 +8,19 @@ int ft_pa()
     {
         tmp = *(data.stack_b);
         if (tmp->next != NULL)
+        {
             *(data.stack_b) = tmp->next;
+            tmp->next->before = NULL;
+        }
         else 
             *(data.stack_b) = NULL;
         tmp->next = *(data.stack_a);
+        tmp->before = NULL;
         if (data.last_stacka == NULL)
             data.last_stacka = tmp;
         *(data.stack_a) = tmp;
-        data.len_b--;
         data.len_a++;
+        data.len_b--;
         return (1);
     }
     return (-1);

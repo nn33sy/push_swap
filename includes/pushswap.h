@@ -16,6 +16,7 @@ typedef struct s_stacks
     t_list *last_stacka;
     t_list *last_stackb;
     int     nb_push;
+    t_list **list_med;
 }t_stacks;
 
 t_stacks data;
