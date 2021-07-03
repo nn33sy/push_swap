@@ -127,25 +127,40 @@ void ft_insert(void)
        ft_print_stack(data.stack_b);
        ft_insert_min();
        ft_insert_max();
-    ft_print_stack(data.stack_a);
+        ft_print_stack(data.stack_a);
        ft_print_stack(data.stack_b);
        printf("\n \n"); 
        }
 }
+void ft_putdown(int nb)
+{
+    int i;
 
+    i = 0;
+    while (i < nb / 2)
+    {
+        ft_ra();
+        i++;
+    }
+
+
+}
 int ft_solve_one(void)
 {
 
+    int fake_len_a;
     if  (data.len_a > 2)
     {
         data.nb_push = 0;
         ft_find_mediane(data.stack_a, data.len_a);
               ft_debut_stacka(*(data.stack_a));
             ft_end_stacka();
-                        
        ft_mid_stack_a();
        data.len_b = data.nb_push;
+       fake_len_a = data.len_a;
       ft_insert();
+        ft_putdown(data.nb_push);
+        
     }
     if (data.len_a == 2)
     {
@@ -155,8 +170,3 @@ int ft_solve_one(void)
     
 return (1);
 }
-/*
-int ft_solve_two(void)
-{
-
-}*/

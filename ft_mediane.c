@@ -38,7 +38,7 @@ int ft_alloc_med(int med)
 	tmp = ft_lstnew(med);
 	if (tmp == NULL)
 		ft_error();
-	ft_lstadd_back(data.list_med, tmp);
+	//ft_lstadd_back(data.list_med, tmp);
 	return (1);
 }
 void ft_find_mediane(t_list **stack, int len)
@@ -49,5 +49,5 @@ void ft_find_mediane(t_list **stack, int len)
 	ft_sort_int_tab(tab, len);
 	data.i_med = len / 2;
 	data.med = tab[data.i_med];
-	ft_alloc_med(data.med);
+	//ft_alloc_med(data.med);
 }
