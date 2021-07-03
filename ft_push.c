@@ -43,6 +43,8 @@ int ft_pb()
             *(data.stack_a) = NULL;
         tmp->next = *(data.stack_b);
         tmp->before = NULL;
+        if (*(data.stack_b) != NULL)
+            (*data.stack_b)->before = tmp;
         if (data.last_stackb == NULL)
             data.last_stackb = tmp;
         *(data.stack_b) = tmp;
