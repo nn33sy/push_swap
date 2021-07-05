@@ -18,6 +18,7 @@ int ft_ra(void)
 
         if (*(data.stack_a) != NULL)
         {
+            printf("ra\n");
             if ((*data.stack_a)->next != NULL)
             {
             tmp = *(data.stack_a);
@@ -42,8 +43,10 @@ int ft_rb(void)
 {
         t_list *tmp;
 
+        
         if (*(data.stack_b) != NULL)
         {
+            printf("rb\n");
             if ((*data.stack_b)->next != NULL)
             {
             tmp = *(data.stack_b);

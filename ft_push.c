@@ -6,6 +6,7 @@ int ft_pa()
 
     if (data.stack_b != NULL && *(data.stack_b) != NULL)
     {
+        printf("pa\n");
         tmp = *(data.stack_b);
         if (tmp->next != NULL)
         {
@@ -33,8 +34,10 @@ int ft_pb()
 {
     t_list *tmp;
 
+
     if (data.stack_a != NULL && *(data.stack_a) != NULL)
     {
+        printf("pb\n");
         tmp = *(data.stack_a);
         if (tmp->next != NULL)
         {

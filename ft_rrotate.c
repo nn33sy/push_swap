@@ -26,6 +26,7 @@ int ft_rra(void)
             ft_sa();
             return (1);
         }
+        printf("rra\n");
         tmp = data.last_stacka;
         data.last_stacka = data.last_stacka->before;
         data.last_stacka->next = NULL;
@@ -50,6 +51,7 @@ int ft_rrb(void)
             ft_sb();
             return (1);
         }
+        printf("rrb\n");
         tmp = data.last_stackb;
         data.last_stackb = data.last_stackb->before;
         data.last_stackb->next = NULL;

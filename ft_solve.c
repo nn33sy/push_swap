@@ -155,8 +155,6 @@ int ft_solve_one(void)
         ft_insert();       
         while ((*data.stack_a)->content >data.med)
             ft_ra();
-        
         data.last_stackb = NULL;
-               ft_print_stack(data.stack_a);
 return (1);
 }
