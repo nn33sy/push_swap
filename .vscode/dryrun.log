@@ -1,0 +1,27 @@
+make: Entering directory `/Users/inhow-ch/Desktop/push_swap'
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_parsing.c -o ft_parsing.o
+echo "Linking" [ ft_parsing.c ] "\033[35m"OK"\033[00m"
+ 
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_utils.c -o ft_utils.o
+echo "Linking" [ ft_utils.c ] "\033[35m"OK"\033[00m"
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_sort_int_tab.c -o ft_sort_int_tab.o
+echo "Linking" [ ft_sort_int_tab.c ] "\033[35m"OK"\033[00m"
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_swap.c -o ft_swap.o
+echo "Linking" [ ft_swap.c ] "\033[35m"OK"\033[00m"
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_push.c -o ft_push.o
+echo "Linking" [ ft_push.c ] "\033[35m"OK"\033[00m"
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_rotate.c -o ft_rotate.o
+echo "Linking" [ ft_rotate.c ] "\033[35m"OK"\033[00m"
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_rrotate.c -o ft_rrotate.o
+echo "Linking" [ ft_rrotate.c ] "\033[35m"OK"\033[00m"
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_solve.c -o ft_solve.o
+echo "Linking" [ ft_solve.c ] "\033[35m"OK"\033[00m"
+gcc -Iincludes -Wall -Wextra -Werror  -c ft_mediane.c -o ft_mediane.o
+echo "Linking" [ ft_mediane.c ] "\033[35m"OK"\033[00m"
+make re -C libft/
+cp libft/libft.a ./push_swap.a
+ar rc push_swap.a ft_parsing.o ft_utils.o ft_sort_int_tab.o ft_swap.o ft_push.o ft_rotate.o ft_rrotate.o ft_solve.o ft_mediane.o
+echo "Compiling & indexing" [ push_swap.a ] "\033[32m"SUCCESS"\033[00m"
+gcc -Iincludes  ft_parsing.o ft_utils.o ft_sort_int_tab.o ft_swap.o ft_push.o ft_rotate.o ft_rrotate.o ft_solve.o ft_mediane.o -Wall -Wextra -Werror  main.c  push_swap.a libft/libft.a  -o  push_swap
+make: Leaving directory `/Users/inhow-ch/Desktop/push_swap'
+ 

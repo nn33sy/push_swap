@@ -16,6 +16,8 @@ int ft_pa()
             *(data.stack_b) = NULL;
         tmp->next = *(data.stack_a);
         tmp->before = NULL;
+        if (*(data.stack_a) != NULL)
+            (*data.stack_a)->before = tmp;
         if (data.last_stacka == NULL)
             data.last_stacka = tmp;
         *(data.stack_a) = tmp;

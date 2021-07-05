@@ -76,28 +76,18 @@ void ft_insert_min(void)
     if (data.len_b - data.i_min >= data.i_min)
         while (*data.stack_b != data.min)
         {
-            ft_rb();
             data.i_max --;
-            if (*data.stack_b == data.max)
-            {
-                ft_pa();
-                ft_ra();
-                data.max = NULL;
-            }
+            ft_rb();
         }
     else
         while (*data.stack_b != data.min)
         {
-            ft_rrb();
             data.i_max ++;
-            if (*data.stack_b == data.max)
-            {
-                ft_pa();
-                ft_ra();
-                data.max = NULL;
-            }
+            ft_rrb();
         }
     ft_pa();
+    data.i_max --;
+    ft_ra();
     data.min = NULL;
 }
 
@@ -114,22 +104,16 @@ void ft_insert_max()
        while (*data.stack_b != NULL && *data.stack_b != data.max)
             ft_rrb();}
     ft_pa();
-    ft_ra();
     data.max = NULL;
 }
 
 void ft_insert(void)
 {
-    while (data.len_b != 0)
+    while (data.len_b > 0)
        {
         ft_sort();
-       ft_print_stack(data.stack_a);
-       ft_print_stack(data.stack_b);
        ft_insert_min();
-       ft_insert_max();
-        ft_print_stack(data.stack_a);
-       ft_print_stack(data.stack_b);
-       printf("\n \n"); 
+       ft_insert_max(); 
        }
 }
 void ft_putdown(int nb)
@@ -142,31 +126,37 @@ void ft_putdown(int nb)
         ft_ra();
         i++;
     }
-
-
+}
+void ft_make_stack_b(void)
+{
+    ft_find_mediane(data.stack_a, data.len_a);
+    ft_debut_stacka(*(data.stack_a));
+    ft_end_stacka();
+    ft_mid_stack_a();
 }
 int ft_solve_one(void)
 {
 
-    int fake_len_a;
-    if  (data.len_a > 2)
-    {
         data.nb_push = 0;
-        ft_find_mediane(data.stack_a, data.len_a);
-              ft_debut_stacka(*(data.stack_a));
-            ft_end_stacka();
-       ft_mid_stack_a();
+        ft_make_stack_b();
        data.len_b = data.nb_push;
-       fake_len_a = data.len_a;
       ft_insert();
         ft_putdown(data.nb_push);
+       
+       data.last_stackb = NULL;
+        data.nb_push = 0;
+        while ((*data.stack_a)->content >= data.med)
+        {
+            ft_pb();
+            data.nb_push++;
+        }
+        data.len_b = data.nb_push;
         
-    }
-    if (data.len_a == 2)
-    {
-        if ((*data.stack_a)->content > (*data.stack_a)->next->content)
-            ft_sa();
-    }
-    
+        ft_insert();       
+        while ((*data.stack_a)->content >data.med)
+            ft_ra();
+        
+        data.last_stackb = NULL;
+               ft_print_stack(data.stack_a);
 return (1);
 }
