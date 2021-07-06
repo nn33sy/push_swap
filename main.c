@@ -2,11 +2,20 @@
 
 int	main(int argc, char **argv)
 {
-	if (ft_parsing(argc, argv) == -1)
-		ft_error();
+	if (argc == 2)
+	{
+		ft_parsing_bis(argv);
+	}else 
+		ft_parsing(argc, argv);
 	data.list_med = (t_list **)malloc(sizeof(t_list *));
 	if (data.list_med == NULL)
-		ft_error();	
-	ft_solve_one();
-	//ft_find_mediane(data.stack_a, data.len_a);
+		ft_error();
+	if (data.len_a == 1)	
+		return(0);
+	if (data.len_a <= 100)	
+		ft_solve_hundred();
+
+	if (data.len_a > 100 && data.len_a <= 501)	
+		ft_solve_five_hundred();
+
 }

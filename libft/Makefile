@@ -39,6 +39,7 @@ SRCS	=		ft_strlen.c\
 	  		  ft_putnbr_fd.c\
 				ft_lstnew.c\
 				ft_lstlast.c\
+				ft_lstsize.c\
 				ft_lstadd_back.c
 BONUS		= ft_lstnew.c\
 	   		  ft_lstadd_front.c\

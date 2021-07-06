@@ -11,7 +11,8 @@ SRCS =		ft_parsing.c\
 			ft_rotate.c\
 			ft_rrotate.c\
 			ft_solve.c\
-			ft_mediane.c
+			ft_mediane.c\
+			ft_atoi_ps.c
 		
 OBJS	=	$(SRCS:.c=.o)
 # COLORS

@@ -8,12 +8,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Jul  5 15:39:10 2021
+# Make data base, printed on Tue Jul  6 15:35:35 2021
 
 # Variables
 
-# automatic
  
+# automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -29,11 +29,11 @@ VSCODE_LOG_NATIVE = false
 @F = $(notdir $@)
 # makefile
 CURDIR := /Users/inhow-ch/Desktop/push_swap
-# makefile (from `Makefile', line 19)
+# makefile (from `Makefile', line 20)
 C_OK = "\033[35m"
 # makefile
 SHELL = /bin/sh
-# makefile (from `Makefile', line 18)
+# makefile (from `Makefile', line 19)
 C_NO = "\033[00m"
 # environment
 VSCODE_NLS_CONFIG = {"locale":"fr","availableLanguages":{},"_languagePackSupport":true}
@@ -43,36 +43,38 @@ _ = /usr/bin/make
 CFLAGS = -Wall -Wextra -Werror
 # makefile (from `Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# makefile (from `Makefile', line 25)
+# makefile (from `Makefile', line 26)
 SUCCESS = $(C_GOOD)SUCCESS$(C_NO)
 # environment
 VSCODE_NODE_CACHED_DATA_DIR = /Users/inhow-ch/Library/Application Support/VSCodium/CachedData/507ce72a4466fbb27b715c3722558bb15afa9f48
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from `Makefile', line 20)
+# makefile (from `Makefile', line 21)
 C_GOOD = "\033[32m"
-# makefile (from `Makefile', line 16)
+# makefile (from `Makefile', line 17)
 OBJS = $(SRCS:.c=.o)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0004t080016h2/T/vscode-ipc-52d4ed84-fa3d-4e5b-927e-1afd35645417.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/zz/zyxvpxvq6csfxvn_n0004t080016h2/T/vscode-ipc-e8a707b1-03d7-43a4-9007-c5ac28981a53.sock
 # environment
 VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.oGZLkmctvK/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.9L7TuPoE5l/Render
 # environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/munki
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/munki:/opt/X11/bin
 # environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
-# makefile (from `Makefile', line 22)
+# makefile (from `Makefile', line 23)
 C_WARN = "\033[33m"
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.CAnO3XVG6P/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.3GylO6f5Sx/Listeners
 # automatic
 %F = $(notdir $%)
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.ieHQCRKrlT/org.macosforge.xquartz:0
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -100,7 +102,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # makefile (from `Makefile', line 6)
-SRCS = ft_parsing.c ft_utils.c ft_sort_int_tab.c ft_swap.c ft_push.c ft_rotate.c ft_rrotate.c ft_solve.c ft_mediane.c
+SRCS = ft_parsing.c ft_utils.c ft_sort_int_tab.c ft_swap.c ft_push.c ft_rotate.c ft_rrotate.c ft_solve.c ft_mediane.c ft_atoi_ps.c
 # environment
 SHLVL = 1
 # makefile (from `Makefile', line 2)
@@ -132,25 +134,21 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = com.apple.xpc.launchd.oneshot.0x10000002.Electron
+XPC_SERVICE_NAME = com.visualstudio.code.oss.1528
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
-# makefile (from `Makefile', line 26)
+# makefile (from `Makefile', line 27)
 OK = $(C_OK)OK$(C_NO)
 # environment
 __CF_USER_TEXT_ENCODING = 0x9A02:0x0:0x1
-# environment
-COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186a8
 # automatic
 ^F = $(notdir $^)
 # default
@@ -159,14 +157,14 @@ SUFFIXES :=
 .INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
-# makefile (from `Makefile', line 21)
+# makefile (from `Makefile', line 22)
 C_ERROR = "\033[31m"
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2598
+VSCODE_PID = 2934
 # variable set hash-table stats:
-# Load=76/1024=7%, Rehash=0, Collisions=5/104=5%
+# Load=75/1024=7%, Rehash=0, Collisions=5/103=5%
 
 # Pattern-specific Variable Values
 
@@ -174,15 +172,14 @@ VSCODE_PID = 2598
 
 # Directories
 
-# . (device 16777226, inode 97812): 29 files, no impossibilities.
+# . (device 16777226, inode 97812): 32 files, no impossibilities.
 
-# 29 files, no impossibilities in 1 directories.
- 
+# 32 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 %.o: %.c
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -209,12 +206,12 @@ all: push_swap.a
 ft_swap.o: ft_swap.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_swap'
-#  Last modified 2021-07-05 15:35:21
+#  Last modified 2021-07-06 15:35:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -222,20 +219,29 @@ ft_swap.o: ft_swap.c
 ft_rotate.o: ft_rotate.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_rotate'
-#  Last modified 2021-07-05 15:35:21
+#  Last modified 2021-07-06 15:35:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
 
 # Not a target:
+ft_atoi_ps.c:
+#  Implicit rule search has been done.
+#  Last modified 2021-07-06 13:41:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
 ft_solve.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-05 15:35:18
+#  Last modified 2021-07-06 15:34:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -250,7 +256,7 @@ ft_solve.c:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-03 14:00:18
+#  Last modified 2021-07-06 12:35:14
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -259,7 +265,7 @@ Makefile:
 # Not a target:
 ft_push.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-03 16:27:47
+#  Last modified 2021-07-05 19:45:24
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -277,12 +283,12 @@ ft_sort_int_tab.c:
 ft_mediane.o: ft_mediane.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_mediane'
-#  Last modified 2021-07-05 15:35:22
+#  Last modified 2021-07-06 15:35:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -290,12 +296,12 @@ ft_mediane.o: ft_mediane.c
 ft_utils.o: ft_utils.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_utils'
-#  Last modified 2021-07-05 15:35:21
+#  Last modified 2021-07-06 15:35:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -305,7 +311,7 @@ fclean: clean
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 48):
+#  commands to execute (from `Makefile', line 49):
 	@/bin/rm -f $(NAME)
 	@/bin/rm -f push_swap
 	@make fclean -C libft/
@@ -314,8 +320,9 @@ fclean: clean
 
 # Not a target:
 ft_swap.c:
+ 
 #  Implicit rule search has been done.
-#  Last modified 2021-07-03 14:00:18
+#  Last modified 2021-07-05 19:45:08
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -324,7 +331,7 @@ ft_swap.c:
 # Not a target:
 ft_rotate.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-03 14:00:18
+#  Last modified 2021-07-05 19:45:45
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -333,12 +340,12 @@ ft_rotate.c:
 ft_parsing.o: ft_parsing.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_parsing'
-#  Last modified 2021-07-05 15:35:21
+#  Last modified 2021-07-06 15:35:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -352,12 +359,12 @@ ft_parsing.o: ft_parsing.c
 ft_rrotate.o: ft_rrotate.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_rrotate'
-#  Last modified 2021-07-05 15:35:21
+#  Last modified 2021-07-06 15:35:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -367,11 +374,12 @@ re: fclean all
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
+ 
 
 # Not a target:
 ft_mediane.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-03 16:53:33
+#  Last modified 2021-07-06 14:24:48
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -382,7 +390,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 43):
+#  commands to execute (from `Makefile', line 44):
 	@make clean -C libft/
 	@/bin/rm -f $(OBJ)
 	@echo "[ft_printf] Removed object files!\n"
@@ -391,20 +399,20 @@ clean:
 # Not a target:
 ft_utils.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-03 14:00:18
+#  Last modified 2021-07-06 12:22:03
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-push_swap.a: ft_parsing.o ft_utils.o ft_sort_int_tab.o ft_swap.o ft_push.o ft_rotate.o ft_rrotate.o ft_solve.o ft_mediane.o
+push_swap.a: ft_parsing.o ft_utils.o ft_sort_int_tab.o ft_swap.o ft_push.o ft_rotate.o ft_rrotate.o ft_solve.o ft_mediane.o ft_atoi_ps.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-07-05 15:35:24
+#  Last modified 2021-07-06 15:35:21
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 35):
+#  commands to execute (from `Makefile', line 36):
 	@make re -C libft/
 	@cp libft/libft.a ./$(NAME)
 	@ar rc $@ $^
@@ -412,10 +420,23 @@ push_swap.a: ft_parsing.o ft_utils.o ft_sort_int_tab.o ft_swap.o ft_push.o ft_ro
 	@$(CC) -Iincludes  $(OBJ) $(CFLAGS)  main.c  $(NAME) libft/libft.a  -o  push_swap
 	
 
+ft_atoi_ps.o: ft_atoi_ps.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ft_atoi_ps'
+#  Last modified 2021-07-06 15:35:19
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 32):
+	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
+	@echo "Linking" [ $< ] $(OK)
+	
+
 # Not a target:
 ft_parsing.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-03 14:00:18
+#  Last modified 2021-07-06 13:41:58
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -424,12 +445,12 @@ ft_parsing.c:
 ft_solve.o: ft_solve.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_solve'
-#  Last modified 2021-07-05 15:35:21
+#  Last modified 2021-07-06 15:35:19
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -437,12 +458,12 @@ ft_solve.o: ft_solve.c
 ft_push.o: ft_push.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_push'
-#  Last modified 2021-07-05 15:35:21
+#  Last modified 2021-07-06 15:35:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -450,12 +471,13 @@ ft_push.o: ft_push.c
 ft_sort_int_tab.o: ft_sort_int_tab.c
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ft_sort_int_tab'
-#  Last modified 2021-07-05 15:35:21
+ 
+#  Last modified 2021-07-06 15:35:18
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 31):
+#  commands to execute (from `Makefile', line 32):
 	@$(CC) -Iincludes $(CFLAGS)  -c $< -o $@
 	@echo "Linking" [ $< ] $(OK)
 	
@@ -463,15 +485,14 @@ ft_sort_int_tab.o: ft_sort_int_tab.c
 # Not a target:
 ft_rrotate.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-07-03 14:00:18
+#  Last modified 2021-07-05 19:44:32
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
- 
 # files hash-table stats:
-# Load=27/1024=3%, Rehash=0, Collisions=3/84=4%
+# Load=29/1024=3%, Rehash=0, Collisions=3/90=3%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -483,6 +504,6 @@ ft_rrotate.c:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jul  5 15:39:10 2021
+# Finished Make data base on Tue Jul  6 15:35:35 2021
 
  

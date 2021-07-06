@@ -5,14 +5,24 @@
 # include <unistd.h>
 # include "libft.h"
 
+typedef struct s_med
+{
+    int one;
+    int two;
+    int three;
+    int four;
+    int i_one;
+    int i_two;
+    int i_three;
+    int i_four;
+}t_med;
 typedef struct s_stacks
 {
     t_list **stack_a;
     int     len_a;
     t_list **stack_b;
     int     len_b;
-    int     med;
-    int     i_med;
+    t_med   med;
     t_list *last_stacka;
     t_list *last_stackb;
     int     nb_push;
@@ -47,6 +57,10 @@ t_list *ft_last_before(t_list **stack);
 int ft_rra(void);
 int ft_rrb(void);
 int ft_rrr(void);
-int ft_solve_one(void);
+int ft_solve_hundred(void);
 void	ft_print_reverse(t_list *stack);
+double	ft_atoi_ps(const char *str);
+void ft_parsing_bis(char ** arg);
+int	ft_space(char c);
+void ft_solve_five_hundred(void);
 #endif
