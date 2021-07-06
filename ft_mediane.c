@@ -1,10 +1,10 @@
 #include "pushswap.h"
 
-int *ft_create_tab(t_list **stack, int len)
+int	*ft_create_tab(t_list **stack, int len)
 {
-	t_list *tmp;
-	int *tab;
-	int i;
+	t_list	*tmp;
+	int		*tab;
+	int		i;
 
 	tab = (int *)malloc(sizeof(int) * (len + 1));
 	if (tab == NULL)
@@ -18,11 +18,12 @@ int *ft_create_tab(t_list **stack, int len)
 		i++;
 	}
 	tab[i] = -1;
-	return(tab);
+	return (tab);
 }
-void ft_print_tab(int *tab)
+
+void	ft_print_tab(int *tab)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (tab[i] != -1)
@@ -32,9 +33,9 @@ void ft_print_tab(int *tab)
 	}
 }
 
-void ft_find_mediane(t_list **stack, int len)
+void	ft_find_mediane(t_list **stack, int len)
 {
-	int *tab;
+	int	*tab;
 
 	tab = ft_create_tab(stack, len);
 	ft_sort_int_tab(tab, len);
@@ -52,7 +53,5 @@ void ft_find_mediane(t_list **stack, int len)
 		data.med.one = tab[data.med.i_one];
 		data.med.two = tab[data.med.i_two];
 		data.med.three = tab[data.med.i_three];
-	//	printf("MED : %d %d %d",data.med.one, data.med.two, data.med.three);
-	}
-	
+	}	
 }

@@ -29,10 +29,10 @@ double	ft_atoi_ps(const char *str)
 	while (*str && ft_space(*str) == 0)
 	{
 		if (ft_isdigit(*str) == 0)
-			{
-                ft_error();
-                return (0);
-            }
+		{
+			ft_error();
+			return (0);
+		}
 		res = res * 10 + (*str - '0');
 		str++;
 	}
