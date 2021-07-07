@@ -11,10 +11,16 @@ typedef struct s_med
     int two;
     int three;
     int four;
+    int five;
+    int six;
+    int seven;
     int i_one;
     int i_two;
     int i_three;
     int i_four;
+    int i_five;
+    int i_six;
+    int i_seven;
 }t_med;
 typedef struct s_stacks
 {
@@ -36,6 +42,7 @@ typedef struct s_stacks
 t_stacks data;
 
 int	ft_initiate_data(void);
+void ft_solve_five_hundredbis(void);
 int	ft_check_duplicate(int nb, t_list **stack);
 int	ft_create_stack_a(int len, char **arg);
 int	ft_parsing(int len, char **arg);

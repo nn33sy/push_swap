@@ -200,3 +200,150 @@ void ft_solve_five_hundred(void)
     while ((*data.stack_a)->content >= data.med.three)
         ft_ra();
 }
+
+
+void ft_solve_five_hundredbis(void)
+{
+    int i;
+
+    data.nb_push = 0;
+    ft_find_mediane(data.stack_a, data.len_a);
+    ft_make_stack_b(data.med.four,data.med.i_four);
+    data.len_b = ft_lstsize(*data.stack_b);
+    i = 0;
+    while (i < data.med.i_four - data.med.i_two)
+    {
+        if (((*data.stack_b)->content) >= data.med.two)
+            {
+                ft_pa();
+                i++;}
+        else
+            ft_rb();
+    }
+    i = 0;
+    while (i < data.med.i_two - data.med.i_one)
+    {
+        if (((*data.stack_b)->content) >= data.med.one)
+            {
+                ft_pa();
+                i++;}
+        else
+            ft_rb();
+    }
+    data.len_b = ft_lstsize(*data.stack_b);
+    ft_insert();
+    ft_putdown(data.med.one);
+    data.last_stackb = NULL;
+    while (((*data.stack_a)->content) < data.med.two)
+        ft_pb();
+    ft_insert();
+    ft_putdown(data.med.two);
+    data.last_stackb = NULL;
+ //   ft_print_stack(data.stack_a);
+  //  ft_print_stack(data.stack_b);
+    while (((*data.stack_a)->content) < data.med.four)
+        ft_pb();
+   //     printf("djd\n");
+  //  ft_print_stack(data.stack_a);
+//    printf("pkk");
+  //  ft_print_stack(data.stack_b);
+    //        printf("djd\n");
+        i = 0;
+  //   printf("MED %d",data.med.three);
+    while (i < data.med.i_four - data.med.i_three)
+    {
+        if (((*data.stack_b)->content) >= data.med.three)
+        {
+            ft_pa();
+            i++;
+        }
+        else
+        { 
+            ft_rb();
+        }
+    }    
+    ft_insert();
+    ft_putdown(data.med.three);
+     data.len_b = ft_lstsize(*data.stack_b);
+    data.last_stackb = NULL;
+    while (((*data.stack_a)->content) < data.med.four)
+        ft_pb();
+    ft_insert();
+    ft_putdown(data.med.four);
+  //  ft_print_stack(data.stack_a);
+  //  ft_print_stack(data.stack_b);
+
+
+    data.last_stackb = NULL;
+   while (((*data.stack_a)->content) >= data.med.four)
+        ft_pb();
+    data.len_b = ft_lstsize(*data.stack_b);
+  //      ft_print_stack(data.stack_a);
+  //  ft_print_stack(data.stack_b);
+    i = 0;
+    while (i < data.med.i_six - data.med.i_four)
+    {
+        if (((*data.stack_b)->content) >= data.med.six)
+        {
+            ft_pa();
+        }
+        else
+        { 
+            i++;
+            ft_rb();
+        }
+    }
+    i =0;
+    while (i < data.med.i_five - data.med.i_four)
+    {
+        if (((*data.stack_b)->content) >= data.med.five)
+        {
+            ft_pa();
+        }
+        else
+        { 
+            i++;
+            ft_rb();
+        }
+    }
+        ft_insert();
+    ft_putdown(data.med.five);
+ //   ft_print_stack(data.stack_a);
+  //  ft_print_stack(data.stack_b);
+    data.last_stackb = NULL;
+    while (((*data.stack_a)->content) < data.med.six)
+        ft_pb();
+    ft_insert();
+    ft_putdown(data.med.six);
+    //    ft_print_stack(data.stack_a);
+  //  ft_print_stack(data.stack_b);
+      data.last_stackb = NULL;
+    while (((*data.stack_a)->content) >= data.med.six)
+        ft_pb();
+    i = 0;
+    data.len_b = ft_lstsize(*data.stack_b);
+    while (i < data.med.i_seven - data.med.i_six)
+    {
+        if (((*data.stack_b)->content) >= data.med.seven)
+        {
+            ft_pa();
+        }
+        else
+        { 
+            i++;
+            ft_rb();
+        }
+    }
+    ft_insert();
+    ft_putdown(data.med.seven);
+      //  ft_print_stack(data.stack_a);
+    //    printf("OK");
+  //  ft_print_stack(data.stack_b);
+        data.last_stackb = NULL;
+    while (((*data.stack_a)->content) >= data.med.seven)
+        ft_pb();
+    ft_insert();
+    while (((*data.stack_a)->content) >= data.med.seven)
+        ft_ra();
+      //  ft_print_stack(data.stack_a);
+    }

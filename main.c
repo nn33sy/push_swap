@@ -12,10 +12,10 @@ int	main(int argc, char **argv)
 		ft_error();
 	if (data.len_a == 1)	
 		return(0);
-	if (data.len_a <= 100)	
-		ft_solve_hundred();
+	//if (data.len_a <= 100)	
+	//	ft_solve_hundred();
 
-	if (data.len_a > 100 && data.len_a <= 501)	
-		ft_solve_five_hundred();
+	//if (data.len_a > 100 && data.len_a <= 501)	
+		ft_solve_five_hundredbis();
 
 }
