@@ -17,7 +17,7 @@ void	ft_print_stack(t_list **stack)
 		printf("%d ", tmp->content);
 		tmp = tmp->next;
 	}
-    
+	printf("\n");
 }
 
 void	ft_print_reverse(t_list *stack)
@@ -31,5 +31,4 @@ void	ft_print_reverse(t_list *stack)
 		printf("%d ", tmp->content);
 		tmp = tmp->before;
 	}
-    
 }

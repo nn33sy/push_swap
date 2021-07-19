@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		research_min(int *tab, int size)
+int	research_min(int *tab, int size)
 {
-	int count;
+	int	count;
 	int	min_value;
 	int	i_min;
 
@@ -31,7 +31,7 @@ int		research_min(int *tab, int size)
 	return (i_min);
 }
 
-void	ft_sort_int_tab(int *tab, int size)
+void	ft_sort_int_tab(int *tab, int size, int *tri)
 {
 	int	min;
 	int	inter;
@@ -39,9 +39,11 @@ void	ft_sort_int_tab(int *tab, int size)
 	if ((size != 1) && (size != 0))
 	{
 		min = research_min(tab, size);
+		if (min != 0)
+			*tri = 0;
 		inter = tab[0];
 		tab[0] = tab[min];
 		tab[min] = inter;
-		ft_sort_int_tab(&tab[1], size - 1);
+		ft_sort_int_tab(&tab[1], size - 1, tri);
 	}
 }

@@ -16,25 +16,25 @@ int	ft_ra(void)
 {
 	t_list	*tmp;
 
-	if (*(data.stack_a) != NULL)
+	if (*(g_da.stack_a) != NULL)
 	{
-		printf("ra\n");
-		if ((*data.stack_a)->next != NULL)
+		ft_putstr_fd("ra\n", 1);
+		if ((*g_da.stack_a)->next != NULL)
 		{
-			tmp = *(data.stack_a);
-			*(data.stack_a) = tmp->next;
-			(*data.stack_a)->before = NULL;
-			data.last_stacka->next = tmp;
-			tmp->before = data.last_stacka;
+			tmp = *(g_da.stack_a);
+			*(g_da.stack_a) = tmp->next;
+			(*g_da.stack_a)->before = NULL;
+			g_da.last_stacka->next = tmp;
+			tmp->before = g_da.last_stacka;
 			tmp->next = NULL;
-			data.last_stacka = tmp;
+			g_da.last_stacka = tmp;
 			return (1);
 		}
 		else
-			data.last_stacka = (*data.stack_a);
+			g_da.last_stacka = (*g_da.stack_a);
 	}
 	else
-		data.last_stacka = NULL;
+		g_da.last_stacka = NULL;
 	return (-1);
 }
 
@@ -42,25 +42,25 @@ int	ft_rb(void)
 {
 	t_list	*tmp;
 
-	if (*(data.stack_b) != NULL)
+	if (*(g_da.stack_b) != NULL)
 	{
-		printf("rb\n");
-		if ((*data.stack_b)->next != NULL)
+		ft_putstr_fd("rb\n", 1);
+		if ((*g_da.stack_b)->next != NULL)
 		{
-			tmp = *(data.stack_b);
-			*(data.stack_b) = tmp->next;
-			(*data.stack_b)->before = NULL;
-			data.last_stackb->next = tmp;
-			tmp->before = data.last_stackb;
+			tmp = *(g_da.stack_b);
+			*(g_da.stack_b) = tmp->next;
+			(*g_da.stack_b)->before = NULL;
+			g_da.last_stackb->next = tmp;
+			tmp->before = g_da.last_stackb;
 			tmp->next = NULL;
-			data.last_stackb = tmp;
+			g_da.last_stackb = tmp;
 			return (1);
 		}
 		else
-			data.last_stackb = (*data.stack_b);
+			g_da.last_stackb = (*g_da.stack_b);
 	}
 	else
-		data.last_stackb = NULL;
+		g_da.last_stackb = NULL;
 	return (-1);
 }
 

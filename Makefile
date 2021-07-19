@@ -13,6 +13,10 @@ SRCS =		ft_parsing.c\
 			ft_solve.c\
 			ft_mediane.c\
 			ft_atoi_ps.c\
+			ft_sort_a.c\
+			ft_insert.c\
+			ft_five_hundred.c\
+			ft_sort_five.c\
 			ft_parsing2.c
 		
 OBJS	=	$(SRCS:.c=.o)
