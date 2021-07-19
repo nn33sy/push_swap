@@ -17,6 +17,7 @@ SRCS =		ft_parsing.c\
 			ft_insert.c\
 			ft_five_hundred.c\
 			ft_sort_five.c\
+			ft_sort_five_bis.c\
 			ft_parsing2.c
 		
 OBJS	=	$(SRCS:.c=.o)

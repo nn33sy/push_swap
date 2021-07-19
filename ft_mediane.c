@@ -23,7 +23,7 @@ int	*ft_create_tab(t_list **stack, int len)
 
 void	ft_med_seven(int len, int *tab)
 {
-	g_da.med.i_one =(int) len / 8;
+	g_da.med.i_one = len / 8;
 	g_da.med.i_two = len / 4;
 	g_da.med.i_three = (3 * len) / 8;
 	g_da.med.i_four = len / 2;

@@ -1,5 +1,13 @@
 #include "pushswap.h"
 
+void	main_bis(void)
+{
+	if (g_da.len_a <= 100)
+		ft_solve_hundred();
+	if (g_da.len_a > 100)
+		ft_solve_five_hundred();
+}
+
 int	main(int argc, char **argv)
 {
 	if (argc == 2)
@@ -14,20 +22,17 @@ int	main(int argc, char **argv)
 	if (g_da.len_a == 2)
 	{
 		ft_sort_two();
-		return(0);
+		return (0);
 	}
 	if (g_da.len_a == 3)
 	{
 		ft_sort_three();
-		return(0);
+		return (0);
 	}
 	if (g_da.len_a == 5)
 	{
 		ft_sort_five();
-		return(0);
+		return (0);
 	}
-	if (g_da.len_a <= 100)
-		ft_solve_hundred();
-	if (g_da.len_a > 100)
-		ft_solve_five_hundred();
+	main_bis();
 }

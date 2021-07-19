@@ -42,6 +42,8 @@ typedef struct s_stacks
 
 t_stacks	g_da;
 
+int		ft_calculate(int len, int *first);
+void	ft_calculate_bis(int len, int *first, int i_min);
 int		ft_initiate_data(void);
 void	ft_sort_two(void);
 void	ft_sort_three(void);
@@ -82,4 +84,5 @@ void	ft_make_stack_b(int med, int i);
 void	ft_insert(void);
 void	ft_solve_five_hundred(void);
 void	ft_sort_five(void);
+int		ft_max(int a, int b, int *first);
 #endif

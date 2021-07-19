@@ -51,7 +51,6 @@ void	ft_solve_five_hundredbis(void)
 	g_da.last_stackb = NULL;
 	while (((*g_da.stack_a)->content) >= g_da.med.six)
 		ft_pb();
-	g_da.last_stackb = ft_lstlast(*g_da.stack_b);
 	g_da.len_b = ft_lstsize(*g_da.stack_b);
 	ft_sepbis(g_da.stack_b, g_da.med.i_seven - g_da.med.i_six, g_da.med.seven);
 	ft_insert();

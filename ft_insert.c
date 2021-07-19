@@ -13,7 +13,6 @@ void	ft_sort(t_list **stack)
 	i = 0;
 	while (tmp != NULL)
 	{
-
 		if (tmp->content < g_da.min->content)
 		{
 			g_da.min = tmp;
